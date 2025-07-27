@@ -1,4 +1,4 @@
-# Number-Guessing-game-Puthon
+# Number-Guessing-game-Python
 
 This is a simple **console-based number guessing game** written in Python. 
 The player has to guess a randomly selected number within a specific range.
