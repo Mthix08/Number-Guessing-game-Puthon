@@ -1,9 +1,14 @@
 import random
+count = 0
 while True:
-    computer_number = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ])
+    computer_number = random.choice(range(10))
     number = int(input("Guess The Number (1-10): "))
-    if number != computer_number:
-        print("try again")
+    count = count + 1
+    if number not in range(10):
+        print("Number out of range, try again")
+    elif number != computer_number:
+        print("You guessed incorrectly, try again")
     elif number == computer_number:
-        print("well done. You guessed correctly")
+        print("You guessed correctly, You won!")
         break
+print(f"You took {count} attempts")
