@@ -1,7 +1,7 @@
 import random
 count = 0
+computer_number = random.choice(range(0, 11))
 while True:
-    computer_number = random.choice(range(10))
     number = int(input("Guess The Number (1-10): "))
     count = count + 1
     if number not in range(10):
